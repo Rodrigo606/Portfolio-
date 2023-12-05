@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.navigation {
+  width: max-content;
+  height: 100%;
+  padding: 15rem 0.6rem;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: auto;
+      height: 70px;
+      z-index: 1;
+      &.active a .text {
+        position: absolute;
+        color: #A7D129;
+        height: 100%;
+        width: 100%;
+        font-weight: 600;
+        filter: drop-shadow(0 0 23px #A7D129);
+        border-right: 5px solid #A7D129;
+        -webkit-text-stroke: 1px #A7D129;
+      }
+
+      a {
+        margin: 0;
+        padding: 20px 0;
+        width: auto;
+        position: relative;
+        font-weight: 600;
+        /**/
+        cursor: pointer;
+        color: white;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.text {
+  position: absolute;
+  box-sizing: border-box;
+  color: #A7D129;
+  width: 0%;
+  inset: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 20px 0;
+}
+
+.navigation ul li a:hover .text {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 23px #A7D129);
+  border-right: 5px solid #A7D129;
+}

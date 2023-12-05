@@ -1,0 +1,117 @@
+.container {
+  width: 400px;
+  background:
+      linear-gradient(rgb(10, 10, 10), rgb(10, 10, 10)) padding-box,
+      linear-gradient(145deg, transparent 35%,#A7D129, #d19c29) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container button:active {
+  scale: 0.95;
+}
+
+.container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.container .formGroup label {
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  color: #a7a7a7;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.container .formGroup input {
+  letter-spacing: 2px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.container .formGroup textarea {
+  letter-spacing: 2px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.container .formGroup input::placeholder {
+  opacity: 0.5;
+}
+
+.container .formGroup input:focus {
+  outline: none;
+  border-color: #A7D129;
+}
+
+.container .formGroup textarea:focus {
+  outline: none;
+  border-color: #A7D129;
+}
+
+.container .formSubmit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.container .formSubmit:hover {
+  background-color: #fff;
+  border-color: #fff;
+}

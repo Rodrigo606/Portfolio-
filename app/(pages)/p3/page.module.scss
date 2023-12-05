@@ -1,0 +1,30 @@
+.container{
+  position: relative;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  section{
+    position: absolute;
+    top: 100px;
+  }
+}
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: white;
+  text-decoration: underline #A7D129;
+  margin-bottom: 15px;
+}
+.cards{
+  position: relative;
+  height: 35em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
